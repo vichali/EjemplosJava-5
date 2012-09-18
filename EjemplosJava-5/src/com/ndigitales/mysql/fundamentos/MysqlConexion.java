@@ -42,12 +42,11 @@ public class MysqlConexion {
  */
 	  
 	  conexion = 
-		  DriverManager.
-		  getConnection ("jdbc:mysql://localhost/stock","root", "");          
+		  DriverManager.getConnection ("jdbc:mysql://localhost/stock","root", "");          
 	            
 	           System.out.println("Conexión Exitosa");
 	            
-	  }
+	  }	
       catch (Exception e)
       {
       	System.err.println("Error en la Base de Datos");
@@ -55,6 +54,26 @@ public class MysqlConexion {
       } // end Try
       
   } // end conectarDB
+
+  
   
   
 } // end class
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

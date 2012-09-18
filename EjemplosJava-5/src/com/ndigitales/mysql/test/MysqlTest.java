@@ -7,6 +7,7 @@ package com.ndigitales.mysql.test;
 
 import com.ndigitales.mysql.fundamentos.MysqlConexion;
 
+
 public class MysqlTest {
 
 	public static void main(String[] args) {
