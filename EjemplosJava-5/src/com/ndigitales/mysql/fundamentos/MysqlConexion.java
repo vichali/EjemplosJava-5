@@ -23,7 +23,6 @@ public class MysqlConexion {
  * Para controlar posibles errores, se incluye el código de conexión 
  * dentro de una sentencia try catch 	  
  */
-	  
 	  try {
 /*
  * El uso de Class.forName() es opcional a partir de java 6 (JDBC 4.0) 
@@ -34,18 +33,13 @@ public class MysqlConexion {
  * 
  */
 	  Class.forName("com.mysql.jdbc.Driver");
-	  
 /*
  * Para conectar, es necesario asignar los parámetros 
  * correspondientes a:
  * "jdbc:motor://servidor/basededatos","usuario","clave"
  */
-	  
 	  conexion = 
 		  DriverManager.getConnection ("jdbc:mysql://localhost/stock","root", "");          
-	            
-	           System.out.println("Conexión Exitosa");
-	            
 	  }	
       catch (Exception e)
       {
@@ -54,6 +48,9 @@ public class MysqlConexion {
       } // end Try
       
   } // end conectarDB
+
+  
+
 
   
   

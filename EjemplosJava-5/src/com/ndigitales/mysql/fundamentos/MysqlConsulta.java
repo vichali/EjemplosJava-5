@@ -15,7 +15,7 @@ public class MysqlConsulta extends MysqlConexion {
 // Se crea un Statement, para realizar la consulta
 	 qry = conexion.createStatement();
 // Se realiza la consulta. Los resultados se guardan en el ResultSet rs
-     rs = qry.executeQuery("SELECT codigo,detalle,marca FROM maestrostk;");
+     rs = qry.executeQuery("SELECT codigo,detalle,marca FROM maestrostk p;");
      ejecutarConsulta(rs);
 
 	 } catch (Exception e) {
@@ -30,11 +30,17 @@ public class MysqlConsulta extends MysqlConexion {
 	 System.out.printf("%"+(linea.length())+"s%n",linea);
 	  
 	while (rs.next())
-     { System.out.printf ("%-10s%-35s%-12s%n", rs.getString("codigo"),
-    		 rs.getString("detalle"),rs.getString("marca")) ;
+     { System.out.printf ("%-10s%-35s%-12s%n", rs.getString("p.codigo"),
+    		 rs.getString("p.detalle"),rs.getString("p.marca")) ;
      }
      conexion.close();
 	}
 	
 	
 } // end Class
+
+
+
+
+
+
