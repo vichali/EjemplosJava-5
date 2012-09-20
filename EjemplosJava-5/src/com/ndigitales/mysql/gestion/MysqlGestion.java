@@ -26,7 +26,7 @@ public class MysqlGestion extends MysqlConexionOtra {
 		telEmpresa = ing.nextLine();
 		try {
 			guardarDatos(nombreEmpresa,telEmpresa);
-		} catch (Exception y) {
+		} catch (SQLException y) {
 			System.err.println("Error ingresando datos");
 			y.printStackTrace();
 		}
